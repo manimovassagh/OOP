@@ -1,0 +1,11 @@
+.card .screen {
+    max-width: 200px;
+}
+#card{
+    max-width: 350px !important;
+    
+}
+#card > div > div{
+    height: 100px;
+    background-color: azure;
+}

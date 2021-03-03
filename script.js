@@ -4,10 +4,9 @@ const buttonsAll = document.querySelectorAll(".btn");
 
 const ListenToMe = document.addEventListener("click", (e) => {
   if (e.target.value == undefined) {
-    screen.innerHTML = "Please select proper place";
+   alert('Please Select Buttons not Page!!')
   } else {
     screen.innerHTML = e.target.value;
   }
-  return e.target.value;
+  numberStorage.push(e.target.value)
 });
-
