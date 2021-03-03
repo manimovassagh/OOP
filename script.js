@@ -3,17 +3,11 @@ const numberStorage = [];
 const buttonsAll = document.querySelectorAll(".btn");
 
 const ListenToMe = document.addEventListener("click", (e) => {
-  screen.innerHTML = e.target.value;
+  if (e.target.value == undefined) {
+    screen.innerHTML = "Please select proper place";
+  } else {
+    screen.innerHTML = e.target.value;
+  }
   return e.target.value;
 });
 
-// const listener=buttons.addEventListener('click',(e)=>{
-// screen.innerHTML=e.target.value
-// });
-// const listenerTwo=button2.addEventListener('click',(e)=>{
-//     screen.innerHTML=e.target.value
-// });
-
-// const listener3=button3.addEventListener('click',(e)=>{
-//     screen.innerHTML=e.target.value
-// });
